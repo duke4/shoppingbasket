@@ -1,17 +1,15 @@
 package de.mkcode.shoppingbasket;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.Test;
 
 import de.mkcode.shoppingbasket.commons.DiscountType;
 import de.mkcode.shoppingbasket.models.Discount;
 import de.mkcode.shoppingbasket.models.Item;
 
-@SpringBootTest
 public class ShoppingbasketApplicationTests {
 
 	@Test

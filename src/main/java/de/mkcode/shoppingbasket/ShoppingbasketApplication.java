@@ -3,21 +3,15 @@ package de.mkcode.shoppingbasket;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import de.mkcode.shoppingbasket.commons.DiscountType;
 import de.mkcode.shoppingbasket.controller.ShoppingbasketController;
 import de.mkcode.shoppingbasket.models.Basket;
 import de.mkcode.shoppingbasket.models.Discount;
 import de.mkcode.shoppingbasket.models.Item;
 
-@SpringBootApplication
 public class ShoppingbasketApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ShoppingbasketApplication.class, args);
-
 		Basket basket1 = new Basket(new ArrayList<>());
 		Basket basket2 = new Basket(new ArrayList<>());
 

@@ -1,12 +1,12 @@
 package de.mkcode.shoppingbasket.controller;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import de.mkcode.shoppingbasket.models.Basket;
 import de.mkcode.shoppingbasket.models.BasketItem;
@@ -90,7 +90,7 @@ public class ShoppingbasketControllerTest {
 
         double total = controller.total(basket);
 
-        assertEquals(3.99, total);
+        assertEquals(3.99, total, 0);
     }
 
     @Test
@@ -100,7 +100,7 @@ public class ShoppingbasketControllerTest {
 
         double total = controller.total(basket);
 
-        assertEquals(11.69, total);
+        assertEquals(11.69, total, 0);
     }
 
     @Test
@@ -111,6 +111,6 @@ public class ShoppingbasketControllerTest {
 
         double total = controller.total(basket);
 
-        assertEquals(15.68, total);
+        assertEquals(15.68, total, 0);
     }
 }
